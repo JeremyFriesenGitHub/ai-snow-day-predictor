@@ -15,4 +15,6 @@ Install Instructions:
 11) Use 'node app.js' to run the server, once in the right directory and all modules are installed. 
 12) In any browser, once server is running, paste 'http://localhost:1234' or 'http://localhost:1234/index' to see the html webpage.
 13) You can use admin priveledges with the username: 'jeremyfriesen' and the password of 'demo', if desired. 
-14) Will have to update to fix the integration of the AI model into the project.
+14) Will have to update to fix the integration of the AI model into the project. For now, the prediction with new data for the users is not currently functional. 
+15) Weather Data is used from : https://ottawa.weatherstats.ca/download.html 
+
