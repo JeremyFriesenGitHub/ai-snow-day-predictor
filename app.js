@@ -26,7 +26,7 @@ const registrationRoutes = require('./routes/registrationRoutes');
 const dashboardRoutes = require('./routes/dashboardRoutes');
 const feedbackRoutes = require('./routes/feedbackRoutes');
 const dataRoutes = require('./routes/dataRoutes');
-const weatherPredictionRoutes = require('./routes/weatherPredictionRoutes');
+//const weatherPredictionRoutes = require('./routes/weatherPredictionRoutes');
 
 
 app.use('/', loginRoutes);
@@ -35,7 +35,7 @@ app.use('/', dashboardRoutes);
 app.use('/', feedbackRoutes);
 app.use('/', dataRoutes);
 app.use('/', dataRoutes);
-app.use('/', weatherPredictionRoutes)
+//app.use('/', weatherPredictionRoutes)
 
 
 //Get routes
