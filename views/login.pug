@@ -1,0 +1,99 @@
+doctype html
+html(lang="en")
+  head
+    title Admin Dashboard
+    link(rel="stylesheet", href="/css/main.css")
+  body
+    header
+      h1 Admin Dashboard
+    main
+
+      p Panel For Backspace Button:
+
+      button.back-button(type="button", onclick="window.history.back();") Previous Page
+      section
+        h2.weather-header Feedback
+        if feedback && feedback.length
+         table
+            thead
+              tr
+                th Comments: 
+                th Feedback IDs:
+                th Timestamp:  
+            tbody
+              each f in feedback 
+                tr
+                  td= f.Text
+                  td= f.FId
+                  td= f.Timestamp
+                
+        else
+          p No feedback found.
+
+      section 
+      h2 Add Historical Data
+        form(method="POST", action="/add-historical-data")
+          .form-group
+            label(for="date") Date: 
+            input(type="date", name="date", required)
+          .form-group
+            label(for="temperature") Temperature: 
+            input(type="number", step="any", name="temperature", required)
+          
+          .form-group
+            label(for="rain") Rain: 
+            input(type="number", step="any", name="rain")
+          .form-group
+            label(for="snow") Snow: 
+            input(type="number", step="any", name="snow")
+          .form-group
+            label(for="windChill") Wind Chill: 
+            input(type="number", step="any", name="windChill")
+          .form-group
+            label(for="visibility") Visibility: 
+            input(type="number", step="any", name="visibility") 
+          .form-group
+            label(for="snowOnGround") Snow on Ground: 
+            input(type="number", name="snowOnGround")
+          .form-group
+            label(for="outcome") SnowDay Outcome: 
+            input(type="number", name="outcome", required)
+          .form-group
+            button(type="submit") Submit
+
+        section
+        h2.weather-header Data
+        if historicalData && historicalData.length
+         table
+            thead
+              tr
+                th Date: 
+                th Data IDs:
+                th Temperature: 
+                th Wind Chill: 
+                th Visibility: 
+                th Rain:
+                th Snow:
+                th Snow on ground: 
+                th Outcome:
+                     
+            tbody
+              each line in historicalData 
+                tr
+                  td= line.Date
+                  td= line.HId
+                  td= line.Temperature
+                  td= line.Wind_Chill
+                  td= line.Visibility
+                  td= line.Rain
+                  td= line.Snow
+                  td= line.Snow_On_Ground
+                  td= line.Outcome
+                  
+                
+        else
+          p No data found.
+
+
+    
+     

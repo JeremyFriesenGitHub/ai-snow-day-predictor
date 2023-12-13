@@ -1,0 +1,28 @@
+const express = require('express');
+const router = express.Router();
+const db = require('../database');
+const joblib = require('joblib');
+
+// Load the trained model
+const model = joblib.load('random_forest_model.joblib');
+
+router.post('/submit-weather-data', async (req, res) => {
+    const { date, temperature, windChill, visibility, rain, snow, snowOnGround } = req.body;
+
+    // Preprocess the input data to match the format expected by the model
+    const inputData = preprocessData({ temperature, windChill, visibility, rain, snow, snowOnGround });
+
+    // Make a prediction using the AI model
+    const prediction = model.predict([inputData]);
+
+    // Show the result on the dashboard
+    res.render('dashboard', { predictionDate: date, predictionResult: prediction });
+});
+
+function preprocessData(data) {
+    // Convert and scale the data as needed by the model
+    // Example: assuming the model expects all features as floats
+    return Object.values(data).map(value => parseFloat(value) || 0);
+}
+
+module.exports = router;
