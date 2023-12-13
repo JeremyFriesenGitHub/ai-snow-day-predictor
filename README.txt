@@ -14,7 +14,4 @@ Install Instructions:
 10) Install body-parser (npm install body-parser). 
 11) Use 'node app.js' to run the server, once in the right directory and all modules are installed. 
 12) In any browser, once server is running, paste 'http://localhost:1234' or 'http://localhost:1234/index' to see the html webpage.
-13) You can use admin priveledges with the username: 'TA' and the password of 'COMP2406', if desired. 
-14) For a full description of the site, watch the YouTube tutorial at this link below: 
-
-https://youtu.be/mQt0oo4m1po
+13) You can use admin priveledges with the username: 'jeremyfriesen' and the password of 'demo', if desired. 
