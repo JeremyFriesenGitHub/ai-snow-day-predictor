@@ -8,7 +8,7 @@ Install Instructions:
 4) Install Pug (npm install pug)
 5) Install Express (npm install express)
 6) Install SQLite3 (npm install sqlite3). Make sure you also have the SQLite3 file downloaded as well. 
-7) Install Bcrypt (npm intsall bcrypt). This uses hashing for security of passwords. 
+7) Install Bcrypt (npm install bcrypt). This uses hashing for security of passwords. 
 8) Install Express-session (npm install express-session). This handles user sessions.
 9) Install Axios (npm install axios). This facilitates using external API's. 
 10) Install body-parser (npm install body-parser). 
