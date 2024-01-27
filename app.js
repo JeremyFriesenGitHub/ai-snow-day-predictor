@@ -26,7 +26,8 @@ const registrationRoutes = require('./routes/registrationRoutes');
 const dashboardRoutes = require('./routes/dashboardRoutes');
 const feedbackRoutes = require('./routes/feedbackRoutes');
 const dataRoutes = require('./routes/dataRoutes');
-//const weatherPredictionRoutes = require('./routes/weatherPredictionRoutes');
+const weatherPredictionRoutes = require('./routes/weatherPredictionRoutes');
+
 
 
 app.use('/', loginRoutes);
@@ -34,8 +35,7 @@ app.use('/register', registrationRoutes);
 app.use('/', dashboardRoutes);
 app.use('/', feedbackRoutes);
 app.use('/', dataRoutes);
-app.use('/', dataRoutes);
-//app.use('/', weatherPredictionRoutes)
+app.use('/', weatherPredictionRoutes)
 
 
 //Get routes
@@ -103,16 +103,17 @@ app.get('/login', (req, res) => {
 //special dashboard logged in route
 app.get('/dashboard', (req, res) => {
   if (req.session.userId) {
-   
-    res.render('dashboard', {
-      title: 'User Dashboard',
-      username: req.session.username 
-    });
+      res.render('dashboard', {
+          title: 'User Dashboard',
+          username: req.session.username,
+          predictionResult: req.session.predictionResult, 
+          dateForPrediction: req.session.dateForPrediction
+      });
   } else {
-    
-    res.redirect('/users');
+      res.redirect('/users');
   }
 });
+
 
 //middleware
 app.use((err, req, res, next) => {
