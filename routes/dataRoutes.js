@@ -5,7 +5,7 @@ const db = require('../database');
  
 
 router.post('/add-historical-data', (req, res) => {
-    // Check if the user is logged in as admin
+    
     if (!req.session.adminId) {
       res.redirect('/admin');
       return;

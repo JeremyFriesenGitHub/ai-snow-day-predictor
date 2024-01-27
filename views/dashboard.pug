@@ -19,22 +19,32 @@ html(lang="en")
           p There was a snow day on #{dateForPrediction}
       else
         if dateForPrediction
-          h2 Data has not been entered yet for #{dateForPrediction}. Enter forecasted weather to get a prediction.
+          h2 Enter a date and forecasted weather to get a prediction.
           form(action="/submit-weather-data", method="post")
             input(type="hidden", name="date", value="#{dateForPrediction}" required)
             label(for="temperature") Temperature (°C):
-            input(type="number", name="temperature", step="0.1" required)
+            input(type="number", name="temperature", step="0.1", required)
             label(for="windChill") Wind Chill (°C):
-            input(type="number", name="windChill" required)
+            input(type="number", name="windChill", required)
             label(for="visibility") Visibility (meters):
             input(type="number", name="visibility")
             label(for="rain") Rain (mm):
-            input(type="number", name="rain", step="0.1" required)
+            input(type="number", name="rain", step="0.1", required)
             label(for="snow") Snow (cm):
-            input(type="number", name="snow", step="0.1" required)
+            input(type="number", name="snow", step="0.1", required)
             label(for="snowOnGround") Snow on Ground (cm):
-            input(type="number", name="snowOnGround" required)
+            input(type="number", name="snowOnGround", required)
             input(type="submit", value="Get Prediction")
+            if predictionResult
+              h2 Prediction Result
+              - var predictionValue = predictionResult.prediction[0]
+              if predictionValue === 0
+                p Prediction: "Sorry! Given the data, it seems like there isn't a snow day!"
+              else
+                p Prediction: "Yes, with these values, there is a SnowDay!"
+   
+
+
     
     footer
       p Buttons to go back: 
