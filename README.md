@@ -8,20 +8,23 @@ To run this application, Docker must be installed on your local machine and runn
 
 ## Setup Instructions
 1. Make sure to download and extract the source files from this repo. 
-2. Open the command prompt and navigate to the root directory of this project.
-3. Use the command:
+2.  **Navigation**:
+   Open the command prompt and navigate to the root directory of this project using `cd`.
+4. **Running Docker-Compose**
+   Use the command:
    ```bash
      docker-compose up
      ```
    Make sure the Docker engine is running in order to create your container!
-4. To stop, use `Ctrl C`.
+5. **Stop, Start**:
+   To stop, use `Ctrl C`.
    Start again using:
    ```bash
      docker-compose up
      ```
    Or use Docker desktop to run container again.
 
-5. **Tutorial**:
+6. **Tutorial**:
    - For a comprehensive walkthrough, you can watch a YouTube tutorial [here]().
 
 ## License
