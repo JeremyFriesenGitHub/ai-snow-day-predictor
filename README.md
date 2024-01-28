@@ -14,10 +14,7 @@ To run this application, Docker must be installed on your local machine and runn
      docker-compose up
      ```
    Make sure the Docker engine is running in order to create your container!
-4. To stop, use:
-   ```bash
-    Ctrl+C
-   ```
+4. To stop, use `Ctrl C`.
    Start again using:
    ```bash
      docker-compose up
