@@ -25,7 +25,7 @@ To run this application, Docker must be installed on your local machine and runn
    Or use Docker desktop to run container again.
 
 6. **Tutorial**:
-   - For a comprehensive walkthrough, you can watch a YouTube tutorial [here]().
+   - For a comprehensive walkthrough, you can watch a YouTube tutorial [here](https://youtu.be/aaOx_7FFF3w).
 
 ## License
 This project is licensed under the Apache License 2.0.
