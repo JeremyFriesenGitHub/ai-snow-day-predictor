@@ -1,4 +1,4 @@
-# AI - Snow Day Predictor
+# A.I. - Snow Day Predictor
 
 ## Description
 This single-page application uses a random forest classifier model to help predict snow days. Data used for training the model can be found [here](https://ottawa.weatherstats.ca/download.html). Users in the app, can login and either get past snow day predictions or input new data for the model to predict. Admins can add historical data to a database and see user feedback from the app!  
