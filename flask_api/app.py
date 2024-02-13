@@ -7,7 +7,6 @@ model = load('random_forest_model.joblib')
 @app.route('/predict', methods=['POST'])
 def predict():
     data = request.get_json()
-    # Extract relevant data and convert to the format your model expects
     prediction = model.predict([data])
     return jsonify({'prediction': prediction.tolist()})
 
