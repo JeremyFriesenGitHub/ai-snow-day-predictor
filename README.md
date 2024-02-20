@@ -41,7 +41,7 @@ The A.I. Snow Day Predictor is a sophisticated tool designed to forecast snow da
 - We take the security of our project seriously. Please review our [Security Policy](https://github.com/JeremyFriesenGitHub/ai-snow-day-predictor/blob/main/SECURITY.md) for guidelines on reporting security vulnerabilities.
 
 ## Contributing
-- Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**. Please refer to the `CONTRIBUTING.md` file for more information.
+- Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**. Please refer to the [CONTRIBUTING.md](https://github.com/JeremyFriesenGitHub/ai-snow-day-predictor/blob/main/CONTRIBUTING.md) file for more information.
 
 ## License
 - This project is licensed under the [Apache License 2.0](https://github.com/JeremyFriesenGitHub/ai-snow-day-predictor/blob/main/LICENSE). This license allows for wide use and modification under specific terms.
