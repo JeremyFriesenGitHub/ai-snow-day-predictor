@@ -14,17 +14,17 @@
 
 ## Documentation
 
-- [Wiki Pages](link-to-wiki)
+- [Wiki Pages]()
 
 ## Security
 
-- [Security Policy](link-to-security-policy)
+- [Security Policy]()
 
 ## Contributing
 
 ## License
 
-- This project is licensed under the [Apache License 2.0](link-to-license).
+- This project is licensed under the [Apache License 2.0]().
 
 ## Acknowledgments
 
