@@ -37,6 +37,9 @@ The A.I. Snow Day Predictor is a sophisticated tool designed to forecast snow da
 ## Documentation
 - For detailed information on project setup, architecture, and usage, please refer to our [Wiki Pages](https://github.com/JeremyFriesenGitHub/ai-snow-day-predictor/wiki).
 
+## Code of Conduct
+- Our community is dedicated to providing a welcoming and inclusive experience for everyone. We expect everyone participating in the A.I. Snow Day Predictor project to abide by our Code of Conduct. This code outlines our expectations for participant behavior as well as the consequences for unacceptable behavior. We invite all those who participate in the A.I. Snow Day Predictor to help us create safe and positive experiences for everyone. For more details on our community standards, please review the [Code of Conduct](https://github.com/JeremyFriesenGitHub/ai-snow-day-predictor/blob/main/CODE_OF_CONDUCT.md).
+
 ## Security
 - We take the security of our project seriously. Please review our [Security Policy](https://github.com/JeremyFriesenGitHub/ai-snow-day-predictor/blob/main/SECURITY.md) for guidelines on reporting security vulnerabilities.
 
