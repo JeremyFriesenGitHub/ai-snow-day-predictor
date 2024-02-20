@@ -31,3 +31,4 @@
 ## Acknowledgments
 
 ## Contact
+- 📫 How to reach me: [jeremyfriesen@cmail.carleton.ca](mailto:jeremyfriesen@cmail.carleton.ca)
