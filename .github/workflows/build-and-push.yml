@@ -1,0 +1,22 @@
+name: Build and Push Docker images
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Log in to GitHub Container Registry
+      run: echo "${{ secrets.GHCR_PAT }}" | docker login ghcr.io -u ${{ github.repository_owner }} --password-stdin
+    - name: Build and push Node app image
+      run: |
+        docker build -t ghcr.io/${{ github.repository_owner }}/node-repo:latest .
+        docker push ghcr.io/${{ github.repository_owner }}/node-repo:latest
+    - name: Build and push Flask app image
+      run: |
+        docker build -t ghcr.io/${{ github.repository_owner }}/flask-repo:latest ./flask_api
+        docker push ghcr.io/${{ github.repository_owner }}/flask-repo:latest
