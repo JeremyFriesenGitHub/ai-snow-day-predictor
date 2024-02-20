@@ -12,6 +12,8 @@
 
 ## Features and Updates
 
+- [New Releases](https://github.com/JeremyFriesenGitHub/ai-snow-day-predictor/releases/tag/v.1.1.0)
+
 ## Documentation
 
 - [Wiki Pages](https://github.com/JeremyFriesenGitHub/ai-snow-day-predictor/wiki)
