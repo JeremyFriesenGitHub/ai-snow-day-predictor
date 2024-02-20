@@ -24,7 +24,7 @@ The A.I. Snow Day Predictor is a sophisticated tool designed to forecast snow da
 1. Clone the repository to your local machine.
 2. Navigate to the project directory.
 3. Run `docker-compose up` to build and start the application.
-4. Access the application through your web browser at `localhost`.
+4. Access the application through your web browser at [http://localhost:1234/](http://localhost:1234/).
 
 ## How to Use
 - **For Users**: Log in to view past predictions or submit new data for real-time forecasting.
