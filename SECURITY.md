@@ -20,3 +20,4 @@ We will provide an initial assessment of the report within a week. If the assess
 If the vulnerability is accepted, we will work on a fix and release a security update. We will also provide an estimated timeline for these actions.
 If the vulnerability is declined, we will provide an explanation.
 Your efforts in reporting vulnerabilities are greatly appreciated and are essential in ensuring the security and privacy of our users. Thank you for your support.
+
