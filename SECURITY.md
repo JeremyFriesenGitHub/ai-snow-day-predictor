@@ -13,7 +13,7 @@ This project is committed to maintaining the security of its users by providing 
 
 We take the security of our project seriously. If you have discovered a security vulnerability, we appreciate your help in disclosing it to us responsibly.
 
-Please report any security vulnerabilities by sending an email to jeremyfriesenl@cmail.carleton.ca. We aim to assess and respond to your report within 48 hours. Here's what you can expect after submitting a report:
+Please report any security vulnerabilities by sending an email to jeremyfriesen@cmail.carleton.ca. We aim to assess and respond to your report within 48 hours. Here's what you can expect after submitting a report:
 
 We will acknowledge receipt of your report within 48 hours.
 We will provide an initial assessment of the report within a week. If the assessment requires further investigation, we will inform you.
