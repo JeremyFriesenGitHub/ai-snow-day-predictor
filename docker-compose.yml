@@ -2,7 +2,7 @@ version: '3'
 services:
   node-app:
     build: .
-    image: jeremyfriesen1/node-repo:latest
+    image: ghcr.io/jeremyfriesengithub/node-repo:latest
     ports:
       - "1234:1234"
     depends_on:
@@ -10,6 +10,7 @@ services:
 
   flask-app:
     build: ./flask_api
-    image: jeremyfriesen1/flask-repo:latest
+    image: ghcr.io/jeremyfriesengithub/flask-repo:latest
     ports:
       - "5000:5000"
+      
