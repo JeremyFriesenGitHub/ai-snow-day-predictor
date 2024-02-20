@@ -18,7 +18,7 @@
 
 ## Security
 
-- [Security Policy]()
+- [Security Policy](https://github.com/JeremyFriesenGitHub/ai-snow-day-predictor/blob/main/SECURITY.md)
 
 ## Contributing
 
