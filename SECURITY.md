@@ -6,7 +6,7 @@ This project is committed to maintaining the security of its users by providing 
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 1.0.1   | :x:                |
+| 1.1.0   | :x:                |
 | < 1.0   | :x:                |
 
 ## Reporting a Vulnerability
