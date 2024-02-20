@@ -14,9 +14,11 @@ jobs:
       run: echo "${{ secrets.GHCR_PAT }}" | docker login ghcr.io -u ${{ github.repository_owner }} --password-stdin
     - name: Build and push Node app image
       run: |
-        docker build -t ghcr.io/${{ github.repository_owner }}/node-repo:latest .
-        docker push ghcr.io/${{ github.repository_owner }}/node-repo:latest
+        REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+        docker build -t ghcr.io/$REPO_OWNER/node-repo:latest .
+        docker push ghcr.io/$REPO_OWNER/node-repo:latest
     - name: Build and push Flask app image
       run: |
-        docker build -t ghcr.io/${{ github.repository_owner }}/flask-repo:latest ./flask_api
-        docker push ghcr.io/${{ github.repository_owner }}/flask-repo:latest
+        REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+        docker build -t ghcr.io/$REPO_OWNER/flask-repo:latest ./flask_api
+        docker push ghcr.io/$REPO_OWNER/flask-repo:latest
